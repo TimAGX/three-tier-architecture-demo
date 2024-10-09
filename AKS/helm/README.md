@@ -184,3 +184,11 @@ kubectl taint node <node_name> pool_1=true:NoExecute
 Hence, this way we can control which `Robot shop` workloads are running on which nodes/nodepools.
 
 > *Note*: `nodeSelector` will behave in a similar fashion.
+
+
+
+install nginx ingress controller 
+
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
+```
